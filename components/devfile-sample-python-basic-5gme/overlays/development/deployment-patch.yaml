@@ -1,0 +1,19 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  creationTimestamp: null
+  name: devfile-sample-python-basic-5gme
+  namespace: nickboldt-tenant
+spec:
+  replicas: 1
+  selector: {}
+  strategy: {}
+  template:
+    metadata:
+      creationTimestamp: null
+    spec:
+      containers:
+      - image: quay.io/redhat-appstudio/user-workload@sha256:4d9e9e7f7dcf6e04bb4b1b388d4ecec3603d2ab979fb5bdebb9a39b02fd4bb33
+        name: my-python
+        resources: {}
+status: {}
